@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yt-server
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: yt-server
+  template:
+    metadata:
+      labels:
+        app: yt-server
+    spec:
+      containers:
+      - name: yt-server
+        image: vikaskaly/yt-server:latest
+        ports:
+        - containerPort: 3001
