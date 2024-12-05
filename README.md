@@ -40,5 +40,5 @@
 - For Mac ( and maybe WSL, not sure :\ ) run `minikube tunnel`.
 - Now go to `http://frontend.yt.local` and it should work
 - If you update code:
-    - Push again
+    - Rebuild and push image again
     - Run ./cleanup.sh (First do `chmod 777 cleanup.sh`)
